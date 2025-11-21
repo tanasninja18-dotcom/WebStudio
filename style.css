@@ -1,0 +1,50 @@
+.logo {
+    color: #2196F3;
+}
+.phone{
+color: #757575;
+}
+.email{
+color: #2196F3;
+}
+.header {
+    background-color: rgb(255, 255, 255);
+}
+.hero-section {
+    background-color: #2F303A;
+    width: 1600px;
+    height: 600px;
+    top: 80px;
+}
+.footer {
+    background-color: #2F303A;
+    width: 1600px;
+    height: 252px;
+    top: 2094px;
+}
+.group-section {
+    background-color: #F5F4FA;
+    width: 1600px;
+    height: 648px;
+    top: 1446px;
+}
+.button-sale {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+.p3 {
+    color: #757575;
+}
+.h3 {
+    color: #212121;
+}
+.h1-hero {
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6%;
+    font-weight: 900;
+    font-family: 'roboto';
+}

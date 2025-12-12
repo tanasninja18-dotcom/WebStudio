@@ -97,7 +97,7 @@ body {
     height: 648px;
     top: 1446px;
 }
-.hero-cta {
+.hero-container {
     background-color: var(--logo-and-button);
     color: #FFFFFF;
     border: none;

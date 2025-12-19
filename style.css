@@ -9,7 +9,7 @@
     --white-color: #FFFFFF;
 }
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
 }
 .header {

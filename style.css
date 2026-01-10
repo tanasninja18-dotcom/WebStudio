@@ -9,8 +9,23 @@
     --white-color: #FFFFFF;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
+        font-family: 'Roboto', sans-serif;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 60px 0;
 }
 .header {
     display: flex;
@@ -27,7 +42,7 @@ body {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.03em;
-  margin-left: 200px;
+        margin-left: 200px;
 }
 .header-logo_brand {
     color: var(--logo-and-button);
@@ -93,9 +108,9 @@ body {
 }
 .group-section {
     background-color: #F5F4FA;
-    width: 1600px;
+    width: 100%;
+    max-width: 1600px;
     height: 648px;
-    top: 1446px;
 }
 .hero-container {
     background-color: var(--logo-and-button);
@@ -117,9 +132,6 @@ body {
     font-weight: 700;
 }
 /* Features */
-.features {
-    padding: 60px 0;
-}
 .features-list {
     display: flex;
     justify-content: space-between;
@@ -128,6 +140,7 @@ body {
     padding: 0;
     margin: 0 auto;
     max-width: 1200px;
+    flex-wrap: wrap;
 }
 
 .features-item {
@@ -148,7 +161,6 @@ body {
 }
 /* Work */
 .work {
-    padding: 60px 0;
     text-align: center;
 }
 
@@ -166,6 +178,8 @@ body {
     padding: 0;
     margin: 0 auto;
     max-width: 1200px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .work-item_img {
@@ -177,7 +191,6 @@ body {
 /* Group */
 .team {
     background-color: #F5F4FA;
-    padding: 94px 0;
     text-align: center;
 }
 .team_title {
@@ -192,16 +205,21 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
-    list-style: none;
-    padding: 0;
 }
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
 .team-card {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
     width: 270px;
     text-align: center;
+    list-style: none;
 }
 .team-card img {
     width: 100%;
@@ -223,10 +241,31 @@ body {
 /* Portfolio */
 .portfolio-projects {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: center;
+}
+
+.portfolio-project {
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 10px gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-project_poster {
+    padding: 0 24px 0 24px;
+    background: #ffffff;
+}
+
+.portfolio-project_poster img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 .portfolio-project_text {
     padding: 20px 24px;
@@ -242,7 +281,7 @@ body {
 .portfolio-project_title {
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.03em;
     margin: 0 0 4px 0;
     color: #212121;
 }

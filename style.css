@@ -18,26 +18,7 @@ body {
 
 button {
     position: relative;
-    overflow: hidden;
     transition: 0.3s;
-}
-
-button::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 6px;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background-color: currentColor;
-    border-radius: 2px;
-    transition: width 0.25s ease;
-}
-
-button:hover::after,
-button:focus-visible::after {
-    width: calc(100% - 20px);
 }
 
 .container {
@@ -98,7 +79,7 @@ section {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    padding-bottom: 6px;
+    padding-bottom: 40px;
 }
 .header-nav-link:hover {
     color: var(--logo-and-button);
@@ -109,7 +90,7 @@ section {
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     background-color: var(--logo-and-button);
     border-radius: 2px;
     transition: transform 0.25s ease;

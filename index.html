@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>WebStudio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -12,8 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
+  <header class="header" data-aos="fade-in" data-aos-duration="1000">
+    <div class="container" >
       <a href="#" class="header-logo"><span class="header-logo_brand">Web</span>Studio</a>
       <nav>
         <ul class="header-nav-list">
@@ -32,16 +33,18 @@
   <main>
     <section class="hero">
       <div class="container">
-        <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
-        <div class="center-container"><button class="hero-container" data-modal-open>Замовити послугу</button></div>
+        <h1 class="hero-title" data-aos="fade-down-right" data-aos-duration="1000">Ефективні рішення для <br />вашого бізнесу</h1>
+        <div class="center-container" data-aos="fade-down-left" data-aos-duration="1000">
+          <button class="hero-container" data-modal-open>Замовити послугу</button>
+        </div>
       </div>
     </section>
 
     <section class="features">
       <div class="container">
-        <ul class="features-list">
+        <ul class="features-list" data-aos="zoom-out-left" data-aos-duration="1000">
           <li class="features-item">
-            <img class="features-item_img" src="./img/card1.jpg" alt="Увага до деталей" />
+            <img class="features-item_img"  src="./img/card1.jpg" alt="Увага до деталей" />
             <h3 class="features-item_title">Увага до деталей</h3>
             <p class="features-item_text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
           </li>
@@ -66,8 +69,8 @@
 
     <section class="work">
       <div class="container">
-        <h2 class="work_title">Чим ми займаємося</h2>
-        <ul class="work-list">
+        <h2 class="work_title" data-aos="fade-up-left" data-aos-duration="1000">Чим ми займаємося</h2>
+        <ul class="work-list" data-aos="fade-up-right" data-aos-duration="1000">
           <li class="work-item">
             <img class="work-item_img" src="./img/box1.jpg" alt="Розробка сайтів" />
             <div class="work-overlay">ДЕСКТОПНІ ДОДАТКИ</div>
@@ -88,8 +91,8 @@
 
     <section class="team">
       <div class="container">
-        <h2 class="team_title">Наша команда</h2>
-        <ul class="team-list">
+        <h2 class="team_title" data-aos="zoom-out-down" data-aos-duration="1000">Наша команда</h2>
+        <ul class="team-list" data-aos="fade-up" data-aos-duration="1000">
           <li class="team-card">
             <img src="./img/igor1.jpg" alt="Ігор Дем'яненко" />
             <h3>Ігор Дем'яненко</h3>
@@ -140,8 +143,8 @@
 
     <section class="clients">
       <div class="container">
-        <h2 class="clients-title">Постійні клієнти</h2>
-        <ul class="clients-list">
+        <h2 class="clients-title" data-aos="zoom-out-down" data-aos-duration="1000">Постійні клієнти</h2>
+        <ul class="clients-list" data-aos="zoom-out-right" data-aos-duration="1000">
           <li class="clients-card"><div class="clients-logo"><svg class="clients-icon"><use xlink:href="./img/symbol-defs.svg#icon-Client1"></use></svg></div></li>
           <li class="clients-card"><div class="clients-logo"><svg class="clients-icon"><use xlink:href="./img/symbol-defs.svg#icon-Client2"></use></svg></div></li>
           <li class="clients-card"><div class="clients-logo"><svg class="clients-icon"><use xlink:href="./img/symbol-defs.svg#icon-Client3"></use></svg></div></li>
@@ -154,7 +157,7 @@
   </main>
 
 <footer class="footer">
-  <div class="container footer-flex">
+  <div class="container footer-flex" data-aos="zoom-out-up" data-aos-duration="1000">
     <div>
       <a href="#" class="header-logo--white"><span class="header-logo_brand">Web</span>Studio</a>
       <address class="site-footer-address">
@@ -165,8 +168,8 @@
     </div>
 
     <div class="footer-right">
-      <p class="footer-social-title">Приєднуйтесь</p>
-      <ul class="social">
+      <p class="footer-social-title" data-aos="zoom-out-left" data-aos-duration="1000">Приєднуйтесь</p>
+      <ul class="social" data-aos="zoom-out-left" data-aos-duration="1000">
         <li class="social-item">
           <a href="">
             <svg class="social-icon">
@@ -198,7 +201,7 @@
       </ul>
     </div>
 
-    <div class="footer-subscribe">
+    <div class="footer-subscribe" data-aos="zoom-out" data-aos-duration="1000">
       <p class="footer-social-title">Підпишіться на розсилку</p>
       <form class="subscribe-form">
         <input type="email" placeholder="E-mail" class="subscribe-input"/>
@@ -242,5 +245,9 @@
   </div>
 </div>
 <script src="./js/modal.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

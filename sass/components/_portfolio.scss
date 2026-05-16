@@ -1,0 +1,111 @@
+.portfolio-filter {
+  width: 100%;
+  padding: 94px 0 50px;
+}
+
+.portfolio-filter-list {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-filter-item {
+  list-style: none;
+}
+
+.portfolio-filter-button {
+  background: $color-bg-light;
+  color: $color-text;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color $transition-default, color $transition-default;
+}
+
+.portfolio-filter-button:hover, .portfolio-filter-button:focus {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.portfolio-projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.portfolio-project {
+  background-color: $color-white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 7px 1px rgba(192, 192, 192, 0.6);
+  height: 404px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 430px;
+}
+
+.portfolio-poster {
+  position: relative;
+  overflow: hidden;
+  background: $color-white;
+}
+
+.portfolio-poster img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(51, 206, 245, 0.45);
+  color: $color-white;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity $transition-default, transform $transition-default;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-poster:hover .portfolio-overlay, .portfolio-poster:focus-within .portfolio-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-overlay-content {
+  max-width: 100%;
+}
+
+.portfolio-text {
+  padding: 20px 24px;
+}
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  margin: 0 0 4px;
+  color: $color-text;
+}
+
+.portfolio-category {
+  font-size: 16px;
+  line-height: 1.2;
+  color: $color-secondary-text;
+  margin: 0;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+}

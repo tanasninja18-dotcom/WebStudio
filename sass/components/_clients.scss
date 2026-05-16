@@ -1,0 +1,49 @@
+.clients {
+  background-color: $color-white;
+}
+
+.clients-title {
+  margin: 0 0 50px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+  color: $color-text;
+}
+
+.clients-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.clients-card {
+  width: 150px;
+  height: 92px;
+}
+
+.clients-logo {
+  width: 100%;
+  height: 100%;
+  border: 1px solid $color-link-muted;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $color-link-muted;
+  transition: border-color $transition-default, fill $transition-default;
+}
+
+.clients-logo:hover, .clients-logo:focus-within {
+  border-color: $color-primary;
+  fill: $color-primary;
+}
+
+.clients-icon {
+  width: 150px;
+  height: 60px;
+}

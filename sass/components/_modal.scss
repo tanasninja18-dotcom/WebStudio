@@ -1,0 +1,104 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity $transition-default, visibility $transition-default;
+}
+
+.backdrop--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  width: 500px;
+  background: $color-white;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid $color-border;
+  background: $color-white;
+  cursor: pointer;
+  transition: background-color $transition-default, color $transition-default;
+  font-size: 18px;
+}
+
+.modal-close:hover {
+  background: $color-primary;
+  color: $color-white;
+}
+
+.modal-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: $color-secondary-text;
+}
+
+.modal-input, .modal-textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color $transition-default, box-shadow $transition-default;
+}
+
+.modal-input:focus, .modal-textarea:focus {
+  border-color: $color-primary;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.12);
+}
+
+.modal-textarea {
+  height: 80px;
+}
+
+.modal-checkbox {
+  font-size: 12px;
+}
+
+.modal-submit {
+  background: $color-primary;
+  color: $color-white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color $transition-default, color $transition-default;
+}
+
+.modal-submit:hover {
+  background: $color-primary-dark;
+}
